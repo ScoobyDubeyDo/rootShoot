@@ -67,10 +67,6 @@
         filter: blur(2px);
     }
 
-    .hero::first-letter {
-        background-color: blue;
-    }
-
     .hero > .bg-image {
         height: 100%;
         grid-area: image;
