@@ -1,0 +1,86 @@
+.hero {
+    height: calc(100vh - var(--appbar-height));
+}
+
+.hero > .bg-image {
+    height: 50%;
+    background: url(/image/bg-image.svg) no-repeat fixed;
+    background-position: 0 5rem;
+    background-size: contain;
+}
+
+.hero > .bg-text {
+    background: var(--primary-bg-color) url(/image/bg-image.svg) no-repeat fixed;
+    background-position: 0 5rem;
+    border-radius: 2rem 2rem 0rem 0rem;
+    height: 50%;
+}
+
+.hero > .bg-text > * {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    backdrop-filter: blur(2px) saturate(100%);
+    background-color: rgba(200, 230, 201, 0.63);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+.types {
+    border: 2px dashed var(--primary-color);
+}
+
+.gifts {
+    background-color: var(--accent-color);
+}
+
+.gifts > h2,
+.types > h2 {
+    margin: 1rem 0;
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "image image text text"
+            "extra extra text text";
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: "";
+        box-sizing: border-box;
+        height: 100%;
+        background: var(--primary-bg-color) url(/image/bg-image.svg) no-repeat
+            fixed;
+        background-position: 0 5rem;
+        grid-area: extra;
+        transform: scale(1.01);
+        filter: blur(2px);
+    }
+
+    .hero::first-letter {
+        background-color: blue;
+    }
+
+    .hero > .bg-image {
+        height: 100%;
+        grid-area: image;
+    }
+
+    .hero > .bg-text {
+        border-radius: unset;
+        height: 100%;
+        grid-area: text;
+    }
+}
+
+/* */
