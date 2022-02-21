@@ -66,125 +66,109 @@
         <div class="appbar-fixed-filler"></div>
         <main>
             <div class="filter-box">
-                <div class="cart-price-pair border-bottom">
-                    <h1 class="heading-2">Filter</h1>
-                    <button class="btn-link heading-6">clear</button>
-                </div>
-                <h3 class="heading-4">Price</h3>
-                <div class="cart-price-pair">
-                    <span class="heading-5">240</span>
-                    <span class="heading-5">1599</span>
-                </div>
-                <input
-                    type="range"
-                    min="240"
-                    max="1599"
-                    value="0"
-                    class="input-range"
-                />
-                <h3 class="heading-4">Type</h3>
-                <label for="plant" class="rootShoot-margin-center heading-5">
-                    <input type="checkbox" />
-                    Indoor
-                </label>
-                <label for="plant" class="rootShoot-margin-center heading-5">
-                    <input type="checkbox" />
-                    Cacti
-                </label>
-                <label for="plant" class="rootShoot-margin-center heading-5">
-                    <input type="checkbox" />
-                    Bonsai
-                </label>
-                <label for="plant" class="rootShoot-margin-center heading-5">
-                    <input type="checkbox" />
-                    Flowering
-                </label>
-                <label for="plant" class="rootShoot-margin-center heading-5">
-                    <input type="checkbox" />
-                    Succulent
-                </label>
-                <h3 class="heading-4">Rating</h3>
-                <div class="rating-group">
+                <div>
+                    <div class="cart-price-pair border-bottom">
+                        <h1 class="heading-4">Filter</h1>
+                        <button class="btn-link heading-6">clear</button>
+                    </div>
+                    <h3 class="heading-5">Price</h3>
+                    <div class="cart-price-pair">
+                        <span class="heading-6">240</span>
+                        <span class="heading-6">1599</span>
+                    </div>
                     <input
-                        disabled
-                        checked
-                        class="rating-input rating-input-none"
-                        name="star"
-                        id="star-none"
+                        type="range"
+                        min="240"
+                        max="1599"
                         value="0"
-                        type="radio"
+                        class="input-range"
                     />
-                    <label class="rating-label" for="star-1">
-                        <i class="rating-icon rating-icon-star fa fa-star"></i>
-                    </label>
-                    <input
-                        class="rating-input"
-                        name="star"
-                        id="star-1"
-                        value="1"
-                        type="radio"
-                    />
-                    <label class="rating-label" for="star-2">
-                        <i class="rating-icon rating-icon-star fa fa-star"></i>
-                    </label>
-                    <input
-                        class="rating-input"
-                        name="star"
-                        id="star-2"
-                        value="2"
-                        type="radio"
-                    />
-                    <label class="rating-label" for="star-3">
-                        <i class="rating-icon rating-icon-star fa fa-star"></i>
-                    </label>
-                    <input
-                        class="rating-input"
-                        name="star"
-                        id="star-3"
-                        value="3"
-                        type="radio"
-                    />
-                    <label class="rating-label" for="star-4">
-                        <i class="rating-icon rating-icon-star fa fa-star"></i>
-                    </label>
-                    <input
-                        class="rating-input"
-                        name="star"
-                        id="star-4"
-                        value="4"
-                        type="radio"
-                    />
-                    <label class="rating-label" for="star-5">
-                        <i class="rating-icon rating-icon-star fa fa-star"></i>
-                    </label>
-                    <input
-                        class="rating-input"
-                        name="star"
-                        id="star-5"
-                        value="5"
-                        type="radio"
-                    />
+                    <h3 class="heading-5">Type</h3>
+                    <span
+                        ><label
+                            for="plant"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input type="checkbox" />
+                            Indoor
+                        </label>
+                        <label
+                            for="plant"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input type="checkbox" />
+                            Cacti
+                        </label>
+                        <label
+                            for="plant"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input type="checkbox" />
+                            Bonsai
+                        </label>
+                        <label
+                            for="plant"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input type="checkbox" />
+                            Flowering
+                        </label>
+                        <label
+                            for="plant"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input type="checkbox" />
+                            Succulent
+                        </label></span
+                    >
+                    <h3 class="heading-5">Rating</h3>
+                    <span
+                        ><label class="star-display"
+                            ><input type="radio" name="star" />
+                            <span>
+                                1 <i class="fas fa-star"></i> and above</span
+                            ></label
+                        >
+                        <label class="star-display"
+                            ><input type="radio" name="star" /><span>
+                                2 <i class="fas fa-star"></i>
+                            </span>
+                            and above</label
+                        >
+                        <label class="star-display"
+                            ><input type="radio" name="star" /><span>
+                                3 <i class="fas fa-star"></i> </span
+                            >and above</label
+                        >
+                        <label class="star-display"
+                            ><input type="radio" name="star" /><span>
+                                4 <i class="fas fa-star"></i> and above
+                            </span></label
+                        ></span
+                    >
+
+                    <h3 class="heading-5">Sort By</h3>
+                    <span
+                        ><label
+                            for="lowToHigh"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input name="sort" id="lowToHigh" type="radio" />
+                            Price - Low to High
+                        </label>
+                        <label
+                            for="highToLow"
+                            class="rootShoot-margin-center text-body-lg"
+                        >
+                            <input name="sort" id="highToLow" type="radio" />
+                            Price - High to Low
+                        </label></span
+                    >
                 </div>
-                <span class="rating-display"></span>
-                <h3 class="heading-4">Sort By</h3>
-                <label
-                    for="lowToHigh"
-                    class="rootShoot-margin-center heading-5"
-                >
-                    <input name="sort" id="lowToHigh" type="radio" /> Price -
-                    Low to High
-                </label>
-                <label
-                    for="highToLow"
-                    class="rootShoot-margin-center heading-5"
-                >
-                    <input name="sort" id="highToLow" type="radio" /> Price -
-                    High to Low
-                </label>
 
                 <button
                     id="apply-filter"
-                    class="appbar-fixed-filler heading-6 rootShoot-hidden btn-filled-green rootShoot-full-width"
+                    class="heading-6 rootShoot-hidden btn-filled-green rootShoot-full-width"
                 >
                     Apply
                 </button>
@@ -202,7 +186,9 @@
                                 class="card-side-image rootShoot-prods-card-img"
                             />
                             <div class="card-side-content">
-                                <h2 class="card-title">Cereus Repandus</h2>
+                                <h2 class="card-title text-noWrap">
+                                    Cereus Repandus
+                                </h2>
                                 <p class="card-subtitle rootShoot-full-width">
                                     Cacti
                                 </p>
@@ -237,7 +223,9 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Chinese Money Plant</h2>
+                            <h2 class="card-title text-noWrap">
+                                Chinese Money Plant
+                            </h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Indoor
                             </p>
@@ -271,7 +259,7 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Blue Daisy</h2>
+                            <h2 class="card-title text-noWrap">Blue Daisy</h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Flowering
                             </p>
@@ -305,7 +293,9 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Notocactus crassigibus</h2>
+                            <h2 class="card-title text-noWrap">
+                                Notocactus crassigibus
+                            </h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Cacti
                             </p>
@@ -339,7 +329,7 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Aroid Palm</h2>
+                            <h2 class="card-title text-noWrap">Aroid Palm</h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Indoor
                             </p>
@@ -373,7 +363,7 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Pink Tulip</h2>
+                            <h2 class="card-title text-noWrap">Pink Tulip</h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Flowering
                             </p>
@@ -407,7 +397,9 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Cereus Repandus</h2>
+                            <h2 class="card-title text-noWrap">
+                                Cereus Repandus
+                            </h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Cacti
                             </p>
@@ -441,7 +433,9 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Cereus Repandus</h2>
+                            <h2 class="card-title text-noWrap">
+                                Cereus Repandus
+                            </h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Cacti
                             </p>
@@ -475,7 +469,9 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Cereus Repandus</h2>
+                            <h2 class="card-title text-noWrap">
+                                Cereus Repandus
+                            </h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Cacti
                             </p>
@@ -509,7 +505,9 @@
                             class="card-side-image rootShoot-prods-card-img"
                         />
                         <div class="card-side-content">
-                            <h2 class="card-title">Cereus Repandus</h2>
+                            <h2 class="card-title text-noWrap">
+                                Cereus Repandus
+                            </h2>
                             <p class="card-subtitle rootShoot-full-width">
                                 Cacti
                             </p>
@@ -541,7 +539,7 @@
                     <i class="fas fa-filter"></i>filter
                 </button>
             </section>
-            <section class="product-pagination heading-4">
+            <section class="product-pagination heading-6">
                 <span>&lt;</span>
                 <span>1</span> , <span>2</span> , <span>3</span> ...
                 <span>9</span> ,
@@ -551,7 +549,13 @@
         </main>
         <footer>
             <span class="statement heading-6 rootShoot-margin-center">
-                Made with &#128153; by Aman
+                Made with
+                <img
+                    src="/image/planting.png"
+                    class="responsive-image"
+                    alt="logo"
+                />
+                by Aman
             </span>
             <div class="media-links">
                 <button class="icon-btn-green">
@@ -572,7 +576,6 @@
             </span>
         </footer>
         <script src="/js/products.js"></script>
-        <script src="https://mor-ui.vercel.app/Components/rating/rating.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"

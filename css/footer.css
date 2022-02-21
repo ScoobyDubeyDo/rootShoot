@@ -12,6 +12,23 @@ footer {
     color: var(--primary-text-color);
 }
 
+.statement {
+    display: flex;
+    align-items: center;
+}
+
+.statement > *:first-child {
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: var(--transition);
+    margin-inline: 0.3rem;
+}
+
+.statement > *:first-child:hover {
+    transform: translateY(-10px);
+    transition: var(--transition);
+}
+
 .media-links {
     display: flex;
     flex-wrap: wrap;
