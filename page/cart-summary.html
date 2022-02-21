@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://mor-ui.vercel.app/css/components.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="/image/planting.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/appbar.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <link rel="stylesheet" href="/css/card.css" />
+        <link rel="stylesheet" href="/css/cart.css" />
+        <title>RootShoot</title>
+    </head>
+    <body>
+        <div class="appbar-standard rootShoot-appbar">
+            <div class="appbar-hero">
+                <a href="/">
+                    <img
+                        src="/image/planting.png"
+                        alt="logo"
+                        class="responsive-image"
+                /></a>
+            </div>
+            <img class="responsive-image" src="/image/logo.png" />
+            <input
+                type="search"
+                placeholder="Search"
+                class="rootShoot-search"
+            />
+            <div class="appbar-btns">
+                <a
+                    href="/page/signin.html"
+                    class="rootShoot-link-reset icon-btn-green"
+                >
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <div class="badge-container">
+                    <a
+                        href="/page/wishlist.html"
+                        class="rootShoot-link-reset icon-btn-green"
+                    >
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <span class="number-badge-blue">13</span>
+                </div>
+            </div>
+        </div>
+        <div class="appbar-fixed-filler"></div>
+        <main>
+            <h2 class="heading-3 text-align-center text-gutterBottom">
+                Order Summary
+            </h2>
+            <div class="cart">
+                <section class="cart-bill text-align-center">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title heading-5">
+                                PRICE DETAILS (3 Items)
+                            </h3>
+                        </div>
+                        <label
+                            ><i class="fas fa-tag"></i>
+                            <input type="text" placeholder="Coupon Code" />
+                        </label>
+
+                        <hr />
+                        <div class="card-body">
+                            <div class="card-text text-gutterBottom">
+                                <div class="heading-6 cart-price-pair">
+                                    <p>Total MRP</p>
+                                    <p>₹ 2398</p>
+                                </div>
+                                <div class="cart-price-pair">
+                                    <p>Discount</p>
+                                    <p>₹ 299</p>
+                                </div>
+                                <div class="cart-price-pair">
+                                    <p>Delivery Charge</p>
+                                    <p>₹ 199</p>
+                                </div>
+                                <div class="cart-price-pair">
+                                    <p>Total Price</p>
+                                    <p>₹ 2298</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="card-actions">
+                                <button
+                                    class="btn-filled-green rootShoot-full-width text-align-center"
+                                >
+                                    make payment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <span class="statement heading-6 rootShoot-margin-center">
+                Made with &#128153; by Aman
+            </span>
+            <div class="media-links">
+                <button class="icon-btn-green">
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <button class="icon-btn-green">
+                    <i class="fab fa-github"></i>
+                </button>
+                <button class="icon-btn-green">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button class="icon-btn-green">
+                    <i class="fas fa-at"></i>
+                </button>
+            </div>
+            <span class="copyright rootShoot-margin-center text-subtitle">
+                copyright &copy 2021 all rights reserved by rootShoot.
+            </span>
+        </footer>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
