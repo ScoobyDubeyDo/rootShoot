@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/image/planting.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mor-ui.vercel.app/css/components.css"
+        />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/appbar.css" />
+        <link rel="stylesheet" href="/css/auth.css" />
+        <title>RootShoot</title>
+    </head>
+    <body>
+        <div class="appbar-standard rootShoot-appbar">
+            <div class="appbar-hero">
+                <a href="/">
+                    <img
+                        src="/image/planting.png"
+                        alt="logo"
+                        class="responsive-image"
+                /></a>
+            </div>
+            <img class="responsive-image" src="/image/logo.png" />
+            <input
+                type="search"
+                placeholder="Search"
+                class="rootShoot-search"
+            />
+        </div>
+        <div class="modal-sm rootShoot-modal" id="modal-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title heading-4">Sign in</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="email" class="input-label">
+                                Email
+                                <input
+                                    class="input"
+                                    type="email"
+                                    placeholder="Email id"
+                                    id="email"
+                                />
+                                <p class="input-error-msg">
+                                    This is an error message.
+                                </p>
+                            </label>
+                            <label for="password" class="input-label">
+                                Password
+                                <input
+                                    class="input"
+                                    type="password"
+                                    placeholder="Password"
+                                    id="password"
+                                />
+                                <p class="input-error-msg">
+                                    This is an error message.
+                                </p>
+                            </label>
+                            <label for="remember me">
+                                <input type="checkbox" />
+                                Remember me
+                            </label>
+                            <a
+                                href="/page/forgot-password.html"
+                                class="btn-link rootShoot-text-capital text-body-sm text-gutterBottom text-align-center"
+                            >
+                                Forgot your Password ?
+                            </a>
+                            <a
+                                href="/index.html"
+                                type="button"
+                                class="btn-filled-green rootShoot-link-reset rootShoot-margin-center text-align-center"
+                            >
+                                Sign in
+                            </a>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a
+                            href="/page/signup.html"
+                            class="btn-link rootShoot-text-capital text-align-center"
+                        >
+                            Create New Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
