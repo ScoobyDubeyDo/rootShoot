@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://mor-ui.vercel.app/css/components.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="/image/planting.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/appbar.css" />
+        <link rel="stylesheet" href="/css/products.css" />
+        <title>RootShoot</title>
+    </head>
+    <body>
+        <div class="appbar-standard rootShoot-appbar">
+            <div class="appbar-hero">
+                <a href="/">
+                    <img
+                        src="/image/planting.png"
+                        alt="logo"
+                        class="responsive-image"
+                /></a>
+            </div>
+            <img class="responsive-image" src="/image/logo.png" />
+
+            <input
+                type="search"
+                placeholder="Search"
+                class="rootShoot-search"
+            />
+            <div class="appbar-btns">
+                <a
+                    href="/page/signin.html"
+                    class="rootShoot-link-reset icon-btn-green"
+                >
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <div class="badge-container">
+                    <a
+                        href="/page/wishlist.html"
+                        class="rootShoot-link-reset icon-btn-green"
+                    >
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <span class="number-badge-blue">13</span>
+                </div>
+                <div class="badge-container">
+                    <a
+                        href="/page/cart.html"
+                        class="rootShoot-link-reset icon-btn-green"
+                    >
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <span class="number-badge-blue">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="appbar-fixed-filler"></div>
+        <main>
+            <div class="single-product">
+                <img
+                    src="/image/product-5.jpg"
+                    alt="product image"
+                    class="responsive-image"
+                />
+                <div>
+                    <h2 class="heading-4">Cereus Repandus</h2>
+                    <p class="text-body-sm rootShoot-full-width">Cacti</p>
+                    <div>
+                        <p class="heading-5">₹499</p>
+                        <label for="qty" class="heading-5"
+                            >Quantity:
+                            <select name="qty" id="qty">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </label>
+                    </div>
+                    <p
+                        class="text-body-lg rootShoot-text-align-justify text-gutterBottom"
+                    >
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Vero dicta sit, tenetur dolorem nobis distinctio.
+                        Aperiam blanditiis fugit quos? Vel eveniet nisi porro
+                        excepturi, voluptates atque iure. Atque numquam nihil
+                        pariatur inventore sit magnam, rem tempore ex, voluptas
+                        laudantium aperiam nulla! Quas eum sed, quidem eaque
+                        dolores facilis illo cumque v erit recusandae quibusdam
+                        accusantium totam pariatur optio. Veniam nihil nostrum
+                        id expedita quos unde ipsam dolor beatae dicta,
+                        distinctio asperiores.
+                    </p>
+                    <button
+                        class="btn-filled-green rootShoot-full-width text-gutterBottom"
+                    >
+                        buy now
+                    </button>
+                    <button
+                        class="btn-outlined-green rootShoot-full-width text-gutterBottom"
+                    >
+                        add to cart
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

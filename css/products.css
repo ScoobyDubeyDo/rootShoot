@@ -1,0 +1,131 @@
+main {
+    position: relative;
+}
+
+.filter-footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-footer-btns {
+    font-size: 1.2rem;
+    outline: 1px solid var(--secondary-bg-color);
+    border: unset;
+    background-color: var(--primary-bg-color);
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.filter-box {
+    display: none;
+    padding: 1rem;
+    background: var(--primary-bg-color);
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    width: 100vw;
+}
+
+.filter-box input[type="range"] {
+    width: 100%;
+}
+
+.filter-box > * {
+    margin-bottom: 1rem;
+}
+
+.cart-price-pair {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+}
+
+.cart-price-pair > *:first-child {
+    flex-grow: 1;
+}
+
+.filter-box-show {
+    display: block;
+}
+
+.product-pagination {
+    padding: 0.5rem;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-pagination *:first-child,
+.product-pagination *:last-child {
+    margin: 0 0.7rem;
+    cursor: pointer;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.product-pagination *:first-child:hover,
+.product-pagination *:last-child:hover {
+    background: var(--primary-bg-color);
+}
+
+.single-product {
+    padding: 2rem;
+}
+
+.single-product > *:nth-child(2) > *:nth-child(3) {
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-box {
+        position: sticky;
+        top: 0;
+        width: 20rem;
+        display: block;
+    }
+
+    main > *:nth-child(2) {
+        width: calc(100% - 21rem);
+        margin-bottom: 5rem;
+    }
+
+    .single-product {
+        display: flex;
+        align-items: center;
+    }
+
+    .single-product > * {
+        padding: 3rem;
+        object-fit: contain;
+        width: 50%;
+    }
+
+    .single-product > *:first-child {
+        height: calc(100vh - 10rem);
+    }
+
+    .product-pagination {
+        margin-top: 5rem;
+        bottom: 0;
+        right: 0;
+        left: 20rem;
+        position: absolute;
+    }
+}
