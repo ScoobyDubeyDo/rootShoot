@@ -9,6 +9,7 @@
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

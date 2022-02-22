@@ -18,10 +18,14 @@
 
 .cart-bill {
     order: -1;
+    position: relative;
     flex-basis: 100%;
 }
 .cart-bill > * {
     width: 100%;
+    position: sticky;
+    top: var(--appbar-height);
+    z-index: 3;
 }
 
 .cart-bill input[placeholder="Coupon Code"] {
