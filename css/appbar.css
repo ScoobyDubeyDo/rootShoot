@@ -45,6 +45,10 @@
         left: 0;
         right: 0;
         height: 2.5rem;
+        width: 35%;
+    }
+
+    .rootShoot-search:focus {
         width: 40%;
     }
 }

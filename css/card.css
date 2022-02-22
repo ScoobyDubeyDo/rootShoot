@@ -1,15 +1,17 @@
 .card-layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem;
+    grid-auto-flow: row;
+    justify-items: center;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
 }
 
 .rootShoot-prods-card {
     transition: var(--transition);
     border-color: var(--primary-bg-color);
+    background: #fff;
 }
 
 .rootShoot-prods-card:hover {

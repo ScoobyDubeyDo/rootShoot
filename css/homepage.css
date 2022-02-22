@@ -34,10 +34,6 @@
     border: 2px dashed var(--primary-color);
 }
 
-.gifts {
-    background-color: var(--accent-color);
-}
-
 .gifts > h2,
 .types > h2 {
     margin: 1rem 0;
